@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+
+//third intent with function
+
+const findMyDirection = (rows,columns) => {
+
+	let direction
+
+	if (rows > columns)  
+    {  
+        if (columns % 2 === 0)  
+            direction = "Up";  
+        else
+            direction = "Down";  
+    }  
+    else 
+    {  
+        if (rows % 2 === 0)  
+            direction = "Left";  
+        else
+            direction = "Right";  
+    } 
+
+	console.log(direction)
+
+}
+
+findMyDirection(3,3)
+
+
+
+
+</script>
+<body>
+    
+</body>
+</html>
